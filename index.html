@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista - Saúde, Leveza e Equilíbrio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte principal: Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Outras fontes ainda utilizadas em elementos específicos (logo, destaques) -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">NutriVida</div>
+            <nav>
+                <ul id="primary-navigation" class="nav-links" aria-label="Navegação principal">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#services">Consultas</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="mobile-menu" role="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation" tabindex="0">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <h1 class="hero-title">Sua saúde começa com escolhas simples.</h1>
+                <p class="hero-subtitle">Atendimento personalizado com foco em bem-estar, leveza e equilíbrio alimentar.</p>
+                <a href="#contact" class="btn">Agende sua consulta</a>
+                <div class="hero-counter">
+                    <div class="counter-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="counter-text">
+                        <strong>+100 vidas transformadas</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="assets/img/Dr-nutri-morango.png" alt="Nutricionista - Foto destaque" class="responsive-img" decoding="async" fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens e Vídeos -->
+    <section class="media-section" id="galeria" aria-label="Galeria de imagens e vídeos">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Resultados em imagens e vídeos</h2>
+
+            <!-- Grid de Imagens (3 colunas) -->
+            <div class="media-grid images-grid" data-rotate="true" aria-label="Galeria de fotos">
+                <!-- Card de imagem 1 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=640&q=60" alt="Prato colorido com alimentos saudáveis" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Alimentação equilibrada e colorida</figcaption>
+                </figure>
+
+                <!-- Card de imagem 2 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=640&q=60" alt="Variedade de frutas frescas" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Frutas e fibras para mais energia</figcaption>
+                </figure>
+
+                <!-- Card de imagem 3 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=640&q=60" alt="Café da manhã saudável" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Café da manhã completo e nutritivo</figcaption>
+                </figure>
+
+                <!-- Card de imagem 4 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=640&q=60" alt="Salada fresca com legumes variados" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Saladas criativas e saborosas</figcaption>
+                </figure>
+
+                <!-- Card de imagem 5 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1466637574449-55d3dc774f0f?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1466637574449-55d3dc774f0f?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1466637574449-55d3dc774f0f?auto=format&fit=crop&w=640&q=60" alt="Prato com proteínas magras e legumes" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Proteínas magras e legumes</figcaption>
+                </figure>
+
+                <!-- Card de imagem 6 -->
+                <figure class="media-card image-card">
+                    <picture>
+                        <source type="image/webp" srcset="https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=420&q=60&fm=webp 420w, https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw">
+                        <img src="https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=640&q=60" alt="Suco verde em copo de vidro" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="420" height="315">
+                    </picture>
+                    <figcaption class="media-caption">Bebidas funcionais e hidratação</figcaption>
+                </figure>
+            </div>
+
+            <!-- Grid de Vídeos (2 colunas) -->
+            <div class="media-grid videos-grid" data-rotate="true" aria-label="Galeria de vídeos">
+                <!-- Card de vídeo 1 -->
+                <figure class="media-card video-card">
+                    <div class="video-frame">
+                        <video preload="none" playsinline controls poster="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=640&q=60" aria-label="Dicas para café da manhã saudável" crossorigin="anonymous">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                            <track kind="captions" srclang="pt" label="Português" src="assets/captions/video1.vtt" default>
+                        </video>
+                        <div class="play-overlay" aria-hidden="true"><i class="fas fa-play"></i></div>
+                    </div>
+                    <figcaption class="media-caption">Dicas práticas de café da manhã</figcaption>
+                </figure>
+
+                <!-- Card de vídeo 2 -->
+                <figure class="media-card video-card">
+                    <div class="video-frame">
+                        <video preload="none" playsinline controls poster="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=640&q=60" aria-label="Vantagens das saladas no dia a dia" crossorigin="anonymous">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4" type="video/mp4">
+                            <track kind="captions" srclang="pt" label="Português" src="assets/captions/video2.vtt" default>
+                        </video>
+                        <div class="play-overlay" aria-hidden="true"><i class="fas fa-play"></i></div>
+                    </div>
+                    <figcaption class="media-caption">Saladas no cotidiano</figcaption>
+                </figure>
+
+                <!-- Card de vídeo 3 -->
+                <figure class="media-card video-card">
+                    <div class="video-frame">
+                        <video preload="none" playsinline controls poster="https://images.unsplash.com/photo-1466637574449-55d3dc774f0f?auto=format&fit=crop&w=640&q=60" aria-label="Como combinar proteínas e legumes" crossorigin="anonymous">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-15s.mp4" type="video/mp4">
+                            <track kind="captions" srclang="pt" label="Português" src="assets/captions/video3.vtt" default>
+                        </video>
+                        <div class="play-overlay" aria-hidden="true"><i class="fas fa-play"></i></div>
+                    </div>
+                    <figcaption class="media-caption">Combinação de proteínas e legumes</figcaption>
+                </figure>
+
+                <!-- Card de vídeo 4 -->
+                <figure class="media-card video-card">
+                    <div class="video-frame">
+                        <video preload="none" playsinline controls poster="https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=640&q=60" aria-label="Benefícios do suco verde" crossorigin="anonymous">
+                            <source src="https://samplelib.com/lib/preview/mp4/sample-20s.mp4" type="video/mp4">
+                            <track kind="captions" srclang="pt" label="Português" src="assets/captions/video4.vtt" default>
+                        </video>
+                        <div class="play-overlay" aria-hidden="true"><i class="fas fa-play"></i></div>
+                    </div>
+                    <figcaption class="media-caption">Benefícios do suco verde</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisor com carrossel de texto contínuo -->
+    <section class="section-divider" aria-label="Mensagens destaque">
+        <div class="text-carousel" data-force-motion="true" role="region" aria-roledescription="carrossel de texto">
+            <div class="carousel-inner">
+                <!-- Grupo 1 -->
+                <span class="carousel-item">Nutrição de resultados há 34 anos</span>
+                <span class="carousel-item">• Ajudo pessoas a ganharem saúde e qualidade de vida</span>
+                <span class="carousel-item">• Planos personalizados com foco em bem-estar</span>
+                <span class="carousel-item">• Acompanhamento e suporte contínuos</span>
+                
+                <!-- Grupo 2 (duplicado para loop contínuo) -->
+                <span class="carousel-item" aria-hidden="true">Nutrição de resultados há 34 anos</span>
+                <span class="carousel-item" aria-hidden="true">• Ajudo pessoas a ganharem saúde e qualidade de vida</span>
+                <span class="carousel-item" aria-hidden="true">• Planos personalizados com foco em bem-estar</span>
+                <span class="carousel-item" aria-hidden="true">• Acompanhamento e suporte contínuos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-content" data-aos="fade-right">
+                <h2 class="section-title">Sobre mim</h2>
+                <p class="about-text">Sou nutricionista formada há mais de 8 anos, com especialização em nutrição clínica e esportiva. Minha missão é ajudar pessoas a alcançarem seus objetivos de saúde através de uma alimentação equilibrada e prazerosa.</p>
+                <p class="about-text">Acredito que cada pessoa é única, por isso desenvolvo planos alimentares personalizados que respeitam suas preferências, rotina e necessidades específicas.</p>
+                <div class="about-highlight">
+                    "Cuidar da sua alimentação é um ato de amor próprio."
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number">3</div>
+                        <div class="stat-text">Especializações</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">8+</div>
+                        <div class="stat-text">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Pacientes Atendidos</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <div class="about-bg"></div>
+                <img src="https://i.pinimg.com/736x/23/c4/d6/23c4d607c56430118ce9fd9f2b925d16.jpg" alt="Nutricionista - Foto profissional">
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultas e Métodos -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Consultas e Métodos</h2>
+            <div class="services-container">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="service-title">Anamnese Personalizada</h3>
+                    <p class="service-text">Avaliação detalhada do seu histórico de saúde, hábitos alimentares, rotina e objetivos para criar um plano totalmente personalizado.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 class="service-title">Avaliação Física e Nutricional</h3>
+                    <p class="service-text">Análise de composição corporal, medidas antropométricas e exames laboratoriais para um diagnóstico nutricional preciso.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="service-title">Planejamento Alimentar</h3>
+                    <p class="service-text">Elaboração de cardápios variados, receitas práticas e orientações para adaptar sua alimentação ao dia a dia.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="service-title">Acompanhamento Contínuo</h3>
+                    <p class="service-text">Suporte constante para ajustes no plano alimentar, esclarecimento de dúvidas e manutenção da motivação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Serviços (Detalhados) -->
+    <section class="services-extended" id="services-extended">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Serviços</h2>
+
+            <!-- Bloco 1 — Recusa e Seletividade Alimentar (texto à esquerda, imagem à direita) -->
+            <div class="service-block" data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="service-title">Recusa e Seletividade Alimentar</h3>
+                    <p>Muitas crianças passam por fases em que recusam certos alimentos, e tudo bem — mas quando isso se torna constante, é sinal de que o corpo e a mente estão pedindo atenção. Cada comportamento tem uma causa, e entender essa origem é o primeiro passo para reverter a seletividade.</p>
+                    <p>Com estratégias práticas, acompanhamento e empatia, o objetivo é transformar o momento da refeição em algo leve, prazeroso e nutritivo para toda a família.</p>
+                </div>
+                <div class="service-image">
+                    <picture>
+                        <source type="image/webp" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <source type="image/jpeg" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <img src="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg" alt="Criança brincando com alimentos coloridos" class="responsive-img" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 992px) 30vw, 30vw" onerror="this.onerror=null; this.src='assets/img/Dr-nutri-morango.png';">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Bloco 2 — Reeducação Alimentar e Obesidade Infantil (imagem à esquerda, texto à direita) -->
+            <div class="service-block reverse" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-text">
+                    <h3 class="service-title">Reeducação Alimentar e Obesidade Infantil</h3>
+                    <p>A alimentação infantil vai muito além do prato — envolve rotina, emoções e hábitos diários. Quando surgem alterações nos exames ou ganho de peso excessivo, é hora de olhar com mais cuidado.</p>
+                    <p>A reeducação alimentar é um processo de aprendizado, não de restrição. Aqui, trabalhamos juntos para ajustar hábitos, incluir alimentos de verdade e ensinar escolhas conscientes, sem perder o prazer de comer bem.</p>
+                </div>
+                <div class="service-image">
+                    <picture>
+                        <source type="image/webp" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <source type="image/jpeg" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <img src="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg" alt="Prato saudável infantil ou criança cozinhando com os pais" class="responsive-img" loading="lazy" decoding="async" fetchpriority="low" onerror="this.onerror=null; this.src='assets/img/Dr-nutri-morango.png';">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Bloco 3 — Acompanhamento Nutricional para Gestantes (texto à esquerda, imagem à direita) -->
+            <div class="service-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-text">
+                    <h3 class="service-title">Acompanhamento Nutricional para Gestantes</h3>
+                    <p>Gestar é nutrir duas vidas — e cada nutriente faz diferença. Durante o acompanhamento, você recebe um plano alimentar personalizado, análise de exames, orientação sobre suplementação e suporte contínuo para garantir uma gestação saudável.</p>
+                    <p>Estarei ao seu lado em cada etapa, ajudando a manter o equilíbrio físico e emocional com uma nutrição completa e acessível.</p>
+                </div>
+                <div class="service-image">
+                    <picture>
+                        <source type="image/webp" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <source type="image/jpeg" srcset="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg">
+                        <img src="https://i.pinimg.com/1200x/33/e7/89/33e7890e8f6582e25d612e68184807a0.jpg" alt="Gestante segurando frutas ou salada" class="responsive-img" loading="lazy" decoding="async" fetchpriority="low" onerror="this.onerror=null; this.src='assets/img/Dr-nutri-morango.png';">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Rodapé da seção com CTA -->
+            <div class="services-footer" data-aos="fade-up">
+                <p class="services-note">Todas as consultas incluem acompanhamento por 60 dias após o atendimento.<br>Formas de pagamento: Pix, débito e crédito (parcelamento em até 3x).</p>
+                <a href="#contact" class="btn">Agendar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="container benefits-container">
+            <h2 class="section-title" data-aos="fade-up">Benefícios e Resultados</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Mais energia e disposição</h3>
+                    <p class="benefit-text">Alimentação equilibrada que fornece nutrientes essenciais para o bom funcionamento do corpo.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon"><i class="fa-solid fa-apple-whole" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Melhora na digestão</h3>
+                    <p class="benefit-text">Combinação adequada de alimentos que facilita a digestão e absorção de nutrientes.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon"><i class="fa-solid fa-fire" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Emagrecimento saudável</h3>
+                    <p class="benefit-text">Perda de peso gradual e sustentável, sem dietas restritivas ou efeito sanfona.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Reeducação alimentar</h3>
+                    <p class="benefit-text">Aprendizado que transforma sua relação com a comida para resultados duradouros.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Clareza mental</h3>
+                    <p class="benefit-text">Nutrientes que melhoram a função cognitiva, memória e concentração.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="benefit-icon"><i class="fa-solid fa-dove" aria-hidden="true"></i></div>
+                    <h3 class="benefit-title">Redução do estresse</h3>
+                    <p class="benefit-text">Alimentos que ajudam a regular os níveis de cortisol e promovem relaxamento.</p>
+                </div>
+            </div>
+            <div class="benefits-btn" data-aos="fade-up">
+                <a href="#contact" class="btn">Quero transformar minha rotina</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title testimonials-title" data-aos="fade-up">Histórias reais, resultados reais</h2>
+
+            <!-- Grid de depoimentos: 3 colunas em desktop, 1 em mobile -->
+            <div class="testimonials-grid" data-aos="fade-up" aria-live="polite">
+                <!-- Card 1 -->
+                <article class="testimonial-card" aria-label="Depoimento de Mariana Silva">
+                    <blockquote class="testimonial-content">“Perdi 15kg em 4 meses com a orientação da nutricionista. O processo foi tranquilo, sem passar fome, e aprendi a me alimentar corretamente. Hoje me sinto muito mais disposta e confiante!”</blockquote>
+
+                    <!-- Imagens antes/depois -->
+                    <div class="before-after" role="group" aria-label="Comparação antes e depois">
+                        <a href="https://images.unsplash.com/photo-1517341725-b12f4e42cc13?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-1" data-caption="Antes" aria-label="Abrir imagem 'Antes' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1517341725-b12f4e42cc13?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1517341725-b12f4e42cc13?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1517341725-b12f4e42cc13?auto=format&fit=crop&w=640&q=60" alt="Foto de antes" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                        <a href="https://images.unsplash.com/photo-1556228601-490415f4a769?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-1" data-caption="Depois" aria-label="Abrir imagem 'Depois' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1556228601-490415f4a769?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1556228601-490415f4a769?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1556228601-490415f4a769?auto=format&fit=crop&w=640&q=60" alt="Foto de depois" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <!-- Vídeo de relato -->
+                    <div class="testimonial-video" aria-label="Vídeo do relato da paciente">
+                        <div class="video-wrapper">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0" title="Relato de paciente" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-author">
+                        <div class="author-image" aria-hidden="true">
+                            <div style="width: 100%; height: 100%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; color: #777;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mariana Silva</h4>
+                            <p>Paciente há 6 meses</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="testimonial-card" aria-label="Depoimento de João Pereira">
+                    <blockquote class="testimonial-content">“Ganhei energia e equilíbrio nas refeições, ajustando porções e escolhas. O acompanhamento fez toda a diferença!”</blockquote>
+                    <div class="before-after" role="group" aria-label="Comparação antes e depois">
+                        <a href="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-2" data-caption="Antes" aria-label="Abrir imagem 'Antes' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=640&q=60" alt="Foto de antes" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                        <a href="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-2" data-caption="Depois" aria-label="Abrir imagem 'Depois' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=640&q=60" alt="Foto de depois" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="testimonial-video" aria-label="Vídeo do relato do paciente">
+                        <div class="video-wrapper">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/jNQXAC9IVRw?rel=0" title="Relato de paciente" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image" aria-hidden="true">
+                            <div style="width: 100%; height: 100%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; color: #777;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <h4>João Pereira</h4>
+                            <p>Paciente há 1 ano</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="testimonial-card" aria-label="Depoimento de Ana Costa">
+                    <blockquote class="testimonial-content">“Aprendi a organizar a rotina e manter o equilíbrio. Os resultados vieram de forma natural e consistente.”</blockquote>
+                    <div class="before-after" role="group" aria-label="Comparação antes e depois">
+                        <a href="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-3" data-caption="Antes" aria-label="Abrir imagem 'Antes' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=640&q=60" alt="Foto de antes" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                        <a href="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1600&q=70" class="lightbox-trigger" data-lightbox="gallery-3" data-caption="Depois" aria-label="Abrir imagem 'Depois' em tela cheia">
+                            <picture>
+                                <source type="image/webp" srcset="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=320&q=60&fm=webp 320w, https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=640&q=60&fm=webp 640w" sizes="(max-width: 576px) 100vw, (max-width: 992px) 45vw, 320px">
+                                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=640&q=60" alt="Foto de depois" loading="lazy" decoding="async" width="320" height="210" fetchpriority="low">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="testimonial-video" aria-label="Vídeo do relato da paciente">
+                        <div class="video-wrapper">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0" title="Relato de paciente" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image" aria-hidden="true">
+                            <div style="width: 100%; height: 100%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; color: #777;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <p>Paciente há 2 anos</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox global para imagens de depoimentos -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualização ampliada de imagem">
+        <button class="lightbox-close" aria-label="Fechar visualização">&times;</button>
+        <figure class="lightbox-content">
+            <img src="" alt="" />
+            <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+        </figure>
+    </div>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contato / Agendamento</h2>
+            <div class="contact-container">
+                <div class="contact-form" data-aos="fade-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="objective">Objetivo Principal</label>
+                            <select id="objective" class="form-control" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="emagrecimento">Emagrecimento</option>
+                                <option value="ganho-massa">Ganho de Massa Muscular</option>
+                                <option value="saude">Melhora da Saúde</option>
+                                <option value="performance">Melhora do Desempenho Esportivo</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Endereço</h4>
+                            <p>Rua das Flores, 123 - Centro<br>São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>E-mail</h4>
+                            <p>contato@nutrivida.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" style="color: var(--verde-profundo); text-decoration: none;">Enviar mensagem</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">NutriVida</div>
+                    <p class="footer-text">Nutricionista especializada em promover saúde, leveza e equilíbrio através da alimentação consciente.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Mim</a></li>
+                        <li><a href="#services">Consultas</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Consulta Presencial</a></li>
+                        <li><a href="#">Consulta Online</a></li>
+                        <li><a href="#">Plano Alimentar</a></li>
+                        <li><a href="#">Acompanhamento</a></li>
+                        <li><a href="#">Palestras</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 NutriVida - Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
