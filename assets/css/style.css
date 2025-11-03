@@ -72,6 +72,16 @@ h1, h2, h3, h4 {
     margin-bottom: 1rem;
 }
 
+/* Mídias responsivas por padrão */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Salvaguarda adicional contra overflow horizontal */
+html { overflow-x: hidden; }
+
 /* Classe utilitária para aplicar Playfair Display em elementos específicos */
 .playfair-display {
     font-family: 'Playfair Display', serif;
@@ -1018,6 +1028,8 @@ footer {
     .hero-container, .about-container {
         flex-direction: column;
     }
+    /* Centraliza e evita espaços excedentes na transição para coluna */
+    .hero-container { justify-content: center; align-items: center; gap: 24px; }
     
     .hero-content, .about-content {
         padding-right: 0;
@@ -1115,20 +1127,77 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* Exibir menu quando ativo no mobile */
+    /* Botões mais compactos em telas médias */
+    .btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Reduz levemente o espaçamento vertical das seções */
+    .about,
+    .services-extended,
+    .benefits,
+    .contact,
+    .testimonials,
+    .alt-sections {
+        padding: 80px 0;
+    }
+
+    /* Ajustes de layout para blocos alternados e serviços */
+    .service-block,
+    .two-col {
+        gap: 28px;
+        margin-bottom: 40px;
+    }
+
+    /* Cartões de depoimento e imagens Antes/Depois */
+    .testimonial-card {
+        padding: 20px;
+    }
+    .before-after img {
+        height: clamp(160px, 30vw, 180px);
+    }
+
+    /* Formulário: reduzir padding mantendo conforto de toque */
+    .contact-form {
+        padding: 28px;
+    }
+
+    /* Exibir menu quando ativo no mobile — painel compacto e rolável */
     .nav-links.active {
         display: block;
-        position: absolute;
-        top: 65px;
-        right: 15px;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 60px; /* abaixo do header */
+        right: 12px;
+        left: 12px; /* mantém painel dentro da viewport */
+        width: auto;
+        max-width: calc(100vw - 24px); /* nunca maior que a viewport */
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+        background-color: rgba(255, 255, 255, 0.97);
+        backdrop-filter: saturate(140%) blur(6px);
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+        z-index: 1200;
+        box-sizing: border-box;
     }
 
     .nav-links.active li {
-        margin: 10px 0;
+        margin: 6px 0;
+    }
+
+    .nav-links.active a {
+        display: block;
+        padding: 10px 12px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .nav-links.active a:hover,
+    .nav-links.active a:focus-visible {
+        background-color: rgba(29, 189, 36, 0.08);
+        outline: none;
     }
 }
 
@@ -1136,6 +1205,20 @@ footer {
     .hero-title {
         font-size: 1.8rem;
     }
+    /* Ajustes extras para telas muito pequenas */
+    /* Containers ocupam toda a largura em mobile para evitar áreas vazias */
+    .container { width: 100%; padding: 0 12px; }
+    .nav-links.active {
+        right: 8px;
+        left: 8px; /* garante painel dentro da viewport */
+        width: auto;
+        max-width: calc(100vw - 16px);
+        padding: 10px;
+        max-height: calc(100vh - 80px);
+        box-sizing: border-box;
+    }
+    .nav-links.active a { font-size: 0.95rem; padding: 9px 10px; }
+    .nav-links.active li { margin: 6px 0; }
     
     .about-stats {
         flex-direction: column;
@@ -1145,4 +1228,40 @@ footer {
     .about-highlight {
         font-size: 1.5rem;
     }
+
+    /* Tipografia e botões ainda mais enxutos no mobile */
+    .hero-subtitle { font-size: 1rem; }
+    .btn { padding: 9px 20px; font-size: 0.95rem; }
+
+    /* Menos espaçamento vertical para caber melhor na viewport */
+    .about,
+    .services-extended,
+    .benefits,
+    .contact,
+    .testimonials,
+    .alt-sections {
+        padding: 60px 0;
+    }
+
+    /* Empilha imagens de Antes/Depois e reduz altura para evitar rolagem excessiva */
+    .before-after { grid-template-columns: 1fr; }
+    .before-after img { height: clamp(140px, 40vw, 170px); }
+
+    /* Cartões de depoimento e conteúdo mais compactos */
+    .testimonial-card { padding: 18px; }
+    .testimonial-content { font-size: 0.95rem; }
+
+    /* Formulário: conforto de toque e economia de espaço */
+    .contact-form { padding: 22px; }
+    .form-control { min-height: 44px; }
+
+    /* Rodapé com menos padding em mobile */
+    footer { padding: 40px 0 24px; }
+
+    /* Ajustes finos para imagem e background da seção Sobre em telas muito pequenas */
+    .about-image img { height: auto; }
+    .about-bg { right: -12px; width: 60%; height: 100%; }
+
+    /* Fundo uniforme em 'services' no mobile para evitar faixas visuais desbalanceadas */
+    .services { background: var(--branco); }
 }
